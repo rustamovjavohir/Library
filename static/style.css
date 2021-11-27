@@ -1,0 +1,22 @@
+h1 {
+    color: Blue;
+}
+
+.book_pic {
+    width: 120px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.profile_pic {
+    width: 35px;
+    border-radius: 50%;
+}
+

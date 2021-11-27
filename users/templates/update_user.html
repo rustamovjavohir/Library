@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+    Update user
+{% endblock title %}
+
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="username"><h4>Username</h4></label>
+        <input type="text" name="username" value="{{ username }}"><br>
+        <label for="first_name"><h4>First_name</h4></label>
+        <input type="text" name="first_name" value="{{ first_name }}"><br>
+        <label for="last_name"><h4>Last_name</h4></label>
+        <input type="text" name="last_name" value="{{ last_name }}"><br>
+        <label for="email"><h4>Email</h4></label>
+        <input type="email" name="email" value="{{ email }}"><br>
+        <label for="picture"><h4>Picture</h4></label>
+        <input type="file" name="picture" value="{{ picture }}"><br>
+        {% if not request.user.is_staff %}
+            <label for="phone"><h4>Phone</h4></label>
+            <input type="number" name="phone" value="{{ phone }}"><br>
+            <label for="profession"><h4>Profession</h4></label>
+            <input type="text" name="profession" value="{{ profession }}"><br>
+            <label for="card"><h4>Card</h4></label>
+            <input type="number" name="card" value="{{ card }}"><br>
+        {% endif %}
+        <label for="password"><h4>Password</h4></label>
+        <input type="password" name="password" value="{{ password }}"><br>
+        {#        <label for="re_password"><h4>Re_password</h4></label>#}
+        {#        <input type="password" name="re_password" value="{{ re_password }}"><br>#}
+        <input type="submit" name="save" value="save" class="btn btn-success">
+    </form>
+
+{% endblock content %}

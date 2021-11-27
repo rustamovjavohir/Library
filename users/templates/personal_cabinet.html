@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+    Personal Cabinet
+{% endblock title %}
+{% block content %}
+    {% if user.is_staff %}
+        <h1>{{ user }}</h1>
+    {% endif %}
+    {% if books %}
+        <ol>
+            {% for book in books %}
+                <div class="m-3">
+                    <li>
+                        {{ book.book.title }}
+                    </li>
+                    <li class="mt-3">
+                        <img src="{{ book.book.picture.url }}" alt="" class="book_pic">
+                    </li>
+                </div>
+            {% endfor %}
+        </ol>
+    {% endif %}
+
+    {% if books.has_previous %}
+        <a href="?page={{ books.previous_page_number }}" class="btn btn-primary">Previous</a>
+    {% endif %}
+
+    {% for page in books.paginator.page_range %}
+        {% if books.number == page %}
+            <a href="?page={{ page }}" class="btn btn-success">{{ page }}</a>
+        {% else %}
+            <a href="?page={{ page }}" class="btn btn-info">{{ page }}</a>
+        {% endif %}
+
+    {% endfor %}
+
+
+    {% if books.has_next %}
+        <a href="?page={{ books.next_page_number }}" class="btn btn-primary">Next</a>
+
+    {% endif %}
+    {#    <div class="mt-2">#}
+    {#        <a href="{% url 'books:book_list' %}" class="btn btn-primary">Back</a>#}
+    {#    </div>#}
+{% endblock content %}

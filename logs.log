@@ -1,0 +1,19 @@
+2021-11-15 16:32:44,881 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-11-15 16:33:08,338 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 16:33:08,425 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 16:33:25,849 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-11-15 16:33:35,090 django.request WARNING  Not Found: /favicon.ico
+2021-11-15 16:33:35,090 django.request WARNING  Not Found: /favicon.ico
+2021-11-15 17:04:47,694 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 17:04:47,784 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 17:05:02,800 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-11-15 17:06:53,923 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 17:06:54,000 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 17:06:57,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-11-15 17:06:59,665 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-15 17:06:59,739 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-27 11:30:22,755 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-11-27 11:30:24,340 django.request WARNING  Not Found: /favicon.ico
+2021-11-27 11:30:24,340 django.request WARNING  Not Found: /favicon.ico
+2021-11-27 11:48:36,455 asyncio      DEBUG    Using proactor: IocpProactor
+2021-11-27 11:48:36,528 asyncio      DEBUG    Using proactor: IocpProactor

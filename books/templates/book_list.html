@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+    Books
+{% endblock title %}
+{% block content %}
+    {% if book_list %}
+        <ul>
+            {% for book in book_list %}
+                <div class="m-3 mt-5">
+                    <li>
+                        <h3><a href="{% url 'books:book_detail' book.id %}">{{ book.title }}</a></h3>
+                    </li>
+                    <li class="mt-3">
+                        {% if book.picture.url.ex %}
+                        
+                        {% endif %} 
+                        <a href="{% url 'books:book_detail' book.id %}">
+                            <img src="{{ book.picture.url }}" alt="{{ book.title }}" class="book_pic "></a>
+                    </li>
+                </div>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>Books not found</h1>
+    {% endif %}
+
+
+    {% if book_list.has_previous %}
+        <a href="?page={{ book_list.previous_page_number }}" class="btn btn-primary">Previous</a>
+    {% endif %}
+
+    {% for page in book_list.paginator.page_range %}
+
+        {% if book_list.number == page %}
+            <a href="?page={{ page }}" class="btn btn-success">{{ page }}</a>
+        {% else %}
+            <a href="?page={{ page }}" class="btn btn-info">{{ page }}</a>
+        {% endif %}
+
+    {% endfor %}
+
+    {% if book_list.has_next %}
+        <a href="?page={{ book_list.next_page_number }}" class="btn btn-primary">Next</a>
+    {% endif %}
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    Update book
+{% endblock title %}
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="title"><h4>Title</h4></label>
+        <input type="text" name="title" value="{{ form.title }}"><br>
+
+        <label for="author"><h4>Author</h4></label>
+        <input type="text" name="author" value="{{ form.author }}"><br>
+
+        <label for="picture"><h4>Picture</h4></label>
+{#        <img src="{{ form.picture }}" alt="">#}
+        <input type="file" name="picture" value=""><br>
+
+        <label for="count"><h4>Count</h4></label>
+        <input type="number" name="count" value="{{ form.count }}"><br>
+
+        <label for="cost"><h4>Cost</h4></label>
+        <input type="number" name="cost" value="{{ form.cost }}"><br>
+
+        <input type="submit" name="save" value="save">
+    </form>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+    Login
+{% endblock title %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {#        <div class="alert">#}
+        {#            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>#}
+        {#            {% if messages %}#}
+        {#                {% for message in messages %}#}
+        {#                    {{ message }}#}
+        {#                {% endfor %}#}
+        {#            {% endif %}<br>#}
+        {#        </div>#}
+        <table>
+            <label for=""></label>
+            username <input type="text" name="username" placeholder="username" class="m-2"><br/>
+            password <input type="password" name="password" class="m-2">
+        </table>
+        <a href="{% url 'users:reset_password' %}">Reset Password</a><br>
+        <a href="{% url 'users:registration' %}" class="btn btn-primary m-2">Registration</a>
+        <input type="submit" class="btn btn-success m-2" name="login" value="login">
+    </form>
+{% endblock content %}
