@@ -170,3 +170,593 @@ django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
 2021-12-01 11:15:10,726 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2021-12-01 11:17:27,605 django.utils.autoreload INFO     E:\Python\Django\Library_\Library_\settings.py changed, reloading.
 2021-12-01 11:17:27,605 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:17:28,056 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:19:53,958 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:19:54,026 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:19:59,027 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:20:00,978 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:20:20,061 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:20:22,017 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:21:02,621 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:24:07,798 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:24:15,082 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:24:54,768 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:27:26,407 django.security.csrf WARNING  Forbidden (CSRF token missing or incorrect.): /user/login/
+2021-12-01 11:27:33,006 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:27:33,098 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:27:33,909 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:30:00,023 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:30:00,023 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:30:00,464 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:30:08,124 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:30:08,204 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:30:08,872 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:30:15,172 django.utils.autoreload INFO     E:\Python\Django\Library_\books\forms.py changed, reloading.
+2021-12-01 11:30:15,173 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:30:15,531 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:35:31,999 django.request ERROR    Internal Server Error: /book/create/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\user\appdata\local\programs\python\python39\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 32, in book_create
+    book = form.save(commit=False)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 459, in save
+    if self.errors:
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\forms.py", line 170, in errors
+    self.full_clean()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\forms.py", line 372, in full_clean
+    self._clean_fields()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\forms.py", line 384, in _clean_fields
+    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\widgets.py", line 449, in value_from_datadict
+    upload = super().value_from_datadict(data, files, name)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\widgets.py", line 390, in value_from_datadict
+    return files.get(name)
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'get'
+2021-12-01 11:35:31,999 django.request ERROR    Internal Server Error: /book/create/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\user\appdata\local\programs\python\python39\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 32, in book_create
+    book = form.save(commit=False)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 459, in save
+    if self.errors:
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\forms.py", line 170, in errors
+    self.full_clean()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\forms.py", line 372, in full_clean
+    self._clean_fields()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\forms.py", line 384, in _clean_fields
+    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\widgets.py", line 449, in value_from_datadict
+    upload = super().value_from_datadict(data, files, name)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\widgets.py", line 390, in value_from_datadict
+    return files.get(name)
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'get'
+2021-12-01 11:41:46,295 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:41:46,296 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:41:46,651 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:41:59,119 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:41:59,119 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:41:59,486 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:42:14,972 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:42:14,973 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:42:15,322 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:42:25,754 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:42:25,754 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:42:26,144 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:42:44,067 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:42:44,152 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:42:45,982 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:45:00,138 PIL.Image    DEBUG    Importing BlpImagePlugin
+2021-12-01 11:45:00,140 PIL.Image    DEBUG    Importing BmpImagePlugin
+2021-12-01 11:45:00,140 PIL.Image    DEBUG    Importing BufrStubImagePlugin
+2021-12-01 11:45:00,141 PIL.Image    DEBUG    Importing CurImagePlugin
+2021-12-01 11:45:00,142 PIL.Image    DEBUG    Importing DcxImagePlugin
+2021-12-01 11:45:00,145 PIL.Image    DEBUG    Importing DdsImagePlugin
+2021-12-01 11:45:00,146 PIL.Image    DEBUG    Importing EpsImagePlugin
+2021-12-01 11:45:00,163 PIL.Image    DEBUG    Importing FitsStubImagePlugin
+2021-12-01 11:45:00,164 PIL.Image    DEBUG    Importing FliImagePlugin
+2021-12-01 11:45:00,166 PIL.Image    DEBUG    Importing FpxImagePlugin
+2021-12-01 11:45:00,167 PIL.Image    DEBUG    Image: failed to import FpxImagePlugin: No module named 'olefile'
+2021-12-01 11:45:00,168 PIL.Image    DEBUG    Importing FtexImagePlugin
+2021-12-01 11:45:00,169 PIL.Image    DEBUG    Importing GbrImagePlugin
+2021-12-01 11:45:00,170 PIL.Image    DEBUG    Importing GifImagePlugin
+2021-12-01 11:45:00,170 PIL.Image    DEBUG    Importing GribStubImagePlugin
+2021-12-01 11:45:00,171 PIL.Image    DEBUG    Importing Hdf5StubImagePlugin
+2021-12-01 11:45:00,172 PIL.Image    DEBUG    Importing IcnsImagePlugin
+2021-12-01 11:45:00,175 PIL.Image    DEBUG    Importing IcoImagePlugin
+2021-12-01 11:45:00,177 PIL.Image    DEBUG    Importing ImImagePlugin
+2021-12-01 11:45:00,178 PIL.Image    DEBUG    Importing ImtImagePlugin
+2021-12-01 11:45:00,180 PIL.Image    DEBUG    Importing IptcImagePlugin
+2021-12-01 11:45:00,181 PIL.Image    DEBUG    Importing JpegImagePlugin
+2021-12-01 11:45:00,181 PIL.Image    DEBUG    Importing Jpeg2KImagePlugin
+2021-12-01 11:45:00,181 PIL.Image    DEBUG    Importing McIdasImagePlugin
+2021-12-01 11:45:00,182 PIL.Image    DEBUG    Importing MicImagePlugin
+2021-12-01 11:45:00,184 PIL.Image    DEBUG    Image: failed to import MicImagePlugin: No module named 'olefile'
+2021-12-01 11:45:00,184 PIL.Image    DEBUG    Importing MpegImagePlugin
+2021-12-01 11:45:00,185 PIL.Image    DEBUG    Importing MpoImagePlugin
+2021-12-01 11:45:00,186 PIL.Image    DEBUG    Importing MspImagePlugin
+2021-12-01 11:45:00,187 PIL.Image    DEBUG    Importing PalmImagePlugin
+2021-12-01 11:45:00,189 PIL.Image    DEBUG    Importing PcdImagePlugin
+2021-12-01 11:45:00,191 PIL.Image    DEBUG    Importing PcxImagePlugin
+2021-12-01 11:45:00,191 PIL.Image    DEBUG    Importing PdfImagePlugin
+2021-12-01 11:45:00,208 PIL.Image    DEBUG    Importing PixarImagePlugin
+2021-12-01 11:45:00,209 PIL.Image    DEBUG    Importing PngImagePlugin
+2021-12-01 11:45:00,209 PIL.Image    DEBUG    Importing PpmImagePlugin
+2021-12-01 11:45:00,209 PIL.Image    DEBUG    Importing PsdImagePlugin
+2021-12-01 11:45:00,211 PIL.Image    DEBUG    Importing SgiImagePlugin
+2021-12-01 11:45:00,212 PIL.Image    DEBUG    Importing SpiderImagePlugin
+2021-12-01 11:45:00,213 PIL.Image    DEBUG    Importing SunImagePlugin
+2021-12-01 11:45:00,214 PIL.Image    DEBUG    Importing TgaImagePlugin
+2021-12-01 11:45:00,215 PIL.Image    DEBUG    Importing TiffImagePlugin
+2021-12-01 11:45:00,215 PIL.Image    DEBUG    Importing WebPImagePlugin
+2021-12-01 11:45:00,217 PIL.Image    DEBUG    Importing WmfImagePlugin
+2021-12-01 11:45:00,218 PIL.Image    DEBUG    Importing XbmImagePlugin
+2021-12-01 11:45:00,221 PIL.Image    DEBUG    Importing XpmImagePlugin
+2021-12-01 11:45:00,223 PIL.Image    DEBUG    Importing XVThumbImagePlugin
+2021-12-01 11:53:14,260 django.request ERROR    Internal Server Error: /book/book_detail/2
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 73, in book_detail
+    return render(request, template_name='book_detail.html', context=context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 63, in url
+    self._require_file()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'picture' attribute has no file associated with it.
+2021-12-01 11:53:14,260 django.request ERROR    Internal Server Error: /book/book_detail/2
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 73, in book_detail
+    return render(request, template_name='book_detail.html', context=context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 63, in url
+    self._require_file()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'picture' attribute has no file associated with it.
+2021-12-01 11:53:18,406 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 99, in book_update
+    form = {'title': book.title, 'author': book.author, 'picture': book.picture.url, 'count': book.count,
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 63, in url
+    self._require_file()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'picture' attribute has no file associated with it.
+2021-12-01 11:53:18,406 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 99, in book_update
+    form = {'title': book.title, 'author': book.author, 'picture': book.picture.url, 'count': book.count,
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 63, in url
+    self._require_file()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'picture' attribute has no file associated with it.
+2021-12-01 11:53:23,999 django.request ERROR    Internal Server Error: /book/book_detail/2
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 73, in book_detail
+    return render(request, template_name='book_detail.html', context=context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 63, in url
+    self._require_file()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'picture' attribute has no file associated with it.
+2021-12-01 11:53:23,999 django.request ERROR    Internal Server Error: /book/book_detail/2
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 73, in book_detail
+    return render(request, template_name='book_detail.html', context=context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 63, in url
+    self._require_file()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'picture' attribute has no file associated with it.
+2021-12-01 11:56:22,072 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:56:22,073 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:56:22,964 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:56:33,704 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:56:33,705 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:56:34,581 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:56:40,170 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:56:40,171 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:56:41,023 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:56:46,613 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:56:46,615 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:56:47,593 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:57:14,723 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:57:14,724 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:57:15,572 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:57:29,389 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 11:57:29,391 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:57:30,302 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:05:10,897 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:05:10,898 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:05:11,855 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:05:59,720 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:05:59,722 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:06:00,648 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:07:48,343 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 96, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:07:48,343 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 96, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:08:09,174 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:08:09,175 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:08:10,074 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:08:21,118 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 99, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:08:21,118 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 99, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:10:15,918 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:10:15,920 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:10:16,863 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:10:24,435 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 99, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:10:24,435 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 99, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:12:45,150 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:12:45,151 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:12:46,134 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:12:56,734 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 96, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:12:56,734 django.request ERROR    Internal Server Error: /book/book_update/2/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python\Django\Library_\books\views.py", line 96, in book_update
+    form = BookForm(instance=object)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 302, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\forms\models.py", line 85, in model_to_dict
+    opts = instance._meta
+AttributeError: type object 'object' has no attribute '_meta'
+2021-12-01 12:13:05,369 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:13:05,371 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:13:06,349 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:20:51,891 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:20:51,892 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:20:52,877 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:20:59,817 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:20:59,922 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:21:02,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:22:45,641 django.utils.autoreload INFO     E:\Python\Django\Library_\books\views.py changed, reloading.
+2021-12-01 12:22:45,642 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:22:46,570 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:27:14,062 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:27:14,176 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 12:27:15,970 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 12:28:02,278 PIL.Image    DEBUG    Importing BlpImagePlugin
+2021-12-01 12:28:02,279 PIL.Image    DEBUG    Importing BmpImagePlugin
+2021-12-01 12:28:02,279 PIL.Image    DEBUG    Importing BufrStubImagePlugin
+2021-12-01 12:28:02,280 PIL.Image    DEBUG    Importing CurImagePlugin
+2021-12-01 12:28:02,281 PIL.Image    DEBUG    Importing DcxImagePlugin
+2021-12-01 12:28:02,282 PIL.Image    DEBUG    Importing DdsImagePlugin
+2021-12-01 12:28:02,283 PIL.Image    DEBUG    Importing EpsImagePlugin
+2021-12-01 12:28:02,299 PIL.Image    DEBUG    Importing FitsStubImagePlugin
+2021-12-01 12:28:02,300 PIL.Image    DEBUG    Importing FliImagePlugin
+2021-12-01 12:28:02,301 PIL.Image    DEBUG    Importing FpxImagePlugin
+2021-12-01 12:28:02,302 PIL.Image    DEBUG    Image: failed to import FpxImagePlugin: No module named 'olefile'
+2021-12-01 12:28:02,303 PIL.Image    DEBUG    Importing FtexImagePlugin
+2021-12-01 12:28:02,303 PIL.Image    DEBUG    Importing GbrImagePlugin
+2021-12-01 12:28:02,304 PIL.Image    DEBUG    Importing GifImagePlugin
+2021-12-01 12:28:02,304 PIL.Image    DEBUG    Importing GribStubImagePlugin
+2021-12-01 12:28:02,305 PIL.Image    DEBUG    Importing Hdf5StubImagePlugin
+2021-12-01 12:28:02,306 PIL.Image    DEBUG    Importing IcnsImagePlugin
+2021-12-01 12:28:02,309 PIL.Image    DEBUG    Importing IcoImagePlugin
+2021-12-01 12:28:02,309 PIL.Image    DEBUG    Importing ImImagePlugin
+2021-12-01 12:28:02,311 PIL.Image    DEBUG    Importing ImtImagePlugin
+2021-12-01 12:28:02,312 PIL.Image    DEBUG    Importing IptcImagePlugin
+2021-12-01 12:28:02,313 PIL.Image    DEBUG    Importing JpegImagePlugin
+2021-12-01 12:28:02,313 PIL.Image    DEBUG    Importing Jpeg2KImagePlugin
+2021-12-01 12:28:02,313 PIL.Image    DEBUG    Importing McIdasImagePlugin
+2021-12-01 12:28:02,314 PIL.Image    DEBUG    Importing MicImagePlugin
+2021-12-01 12:28:02,316 PIL.Image    DEBUG    Image: failed to import MicImagePlugin: No module named 'olefile'
+2021-12-01 12:28:02,316 PIL.Image    DEBUG    Importing MpegImagePlugin
+2021-12-01 12:28:02,317 PIL.Image    DEBUG    Importing MpoImagePlugin
+2021-12-01 12:28:02,317 PIL.Image    DEBUG    Importing MspImagePlugin
+2021-12-01 12:28:02,318 PIL.Image    DEBUG    Importing PalmImagePlugin
+2021-12-01 12:28:02,320 PIL.Image    DEBUG    Importing PcdImagePlugin
+2021-12-01 12:28:02,321 PIL.Image    DEBUG    Importing PcxImagePlugin
+2021-12-01 12:28:02,321 PIL.Image    DEBUG    Importing PdfImagePlugin
+2021-12-01 12:28:02,337 PIL.Image    DEBUG    Importing PixarImagePlugin
+2021-12-01 12:28:02,338 PIL.Image    DEBUG    Importing PngImagePlugin
+2021-12-01 12:28:02,339 PIL.Image    DEBUG    Importing PpmImagePlugin
+2021-12-01 12:28:02,339 PIL.Image    DEBUG    Importing PsdImagePlugin
+2021-12-01 12:28:02,339 PIL.Image    DEBUG    Importing SgiImagePlugin
+2021-12-01 12:28:02,340 PIL.Image    DEBUG    Importing SpiderImagePlugin
+2021-12-01 12:28:02,341 PIL.Image    DEBUG    Importing SunImagePlugin
+2021-12-01 12:28:02,342 PIL.Image    DEBUG    Importing TgaImagePlugin
+2021-12-01 12:28:02,343 PIL.Image    DEBUG    Importing TiffImagePlugin
+2021-12-01 12:28:02,343 PIL.Image    DEBUG    Importing WebPImagePlugin
+2021-12-01 12:28:02,344 PIL.Image    DEBUG    Importing WmfImagePlugin
+2021-12-01 12:28:02,345 PIL.Image    DEBUG    Importing XbmImagePlugin
+2021-12-01 12:28:02,348 PIL.Image    DEBUG    Importing XpmImagePlugin
+2021-12-01 12:28:02,349 PIL.Image    DEBUG    Importing XVThumbImagePlugin
+2021-12-01 13:44:47,380 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 13:44:47,513 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 13:44:49,723 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 15:07:28,279 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 15:07:28,509 asyncio      DEBUG    Using proactor: IocpProactor

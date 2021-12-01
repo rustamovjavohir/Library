@@ -11,7 +11,7 @@
             <h4>author:{{ book.author }}</h4>
             <p>count: {{ book.count }}</p>
             <p>Cost: {{ book.cost }} So'm</p>
-            <a href="{{ book.picture.url }}" download="{{ book.picture.url }}">Download</a><br/>
+            <a href="{{ book.book_file.url }}" download="{{ book.book_file.url }}">Download PDF</a><br/>
         </div>
         <a href="{% url 'books:book_list' %}" class="btn btn-primary">Back</a>
         {% if request.user.is_staff %}

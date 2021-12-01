@@ -5,7 +5,7 @@ from .models import Book, Kartoteka
 class BookForm(forms.ModelForm):
     class Meta:
         model = Book
-        fields = ['title', 'author', 'picture', 'count', 'category']
+        fields = ['title', 'author', 'picture', 'count', 'category', 'book_file']
 
 
 class KartotekaForm(forms.ModelForm):

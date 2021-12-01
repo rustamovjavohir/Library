@@ -17,6 +17,7 @@ class Book(Abstract):
     cost = models.IntegerField(default=20000)
     read_count = models.IntegerField(default=0)
     stars = models.IntegerField(default=0)
+    book_file = models.FileField(upload_to=join_path('books', 'files'), null=True, blank=True)
 
     def __str__(self):
         return self.title.capitalize()

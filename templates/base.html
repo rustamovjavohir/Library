@@ -48,7 +48,7 @@
                     </li>
                     {% if request.user|has_role:"Manager,Admin" %}
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1"
+                            <a class="" href="{% url 'books:book_create' %}" tabindex="-1"
                                aria-disabled="true">{{ user.groups.first }}</a>
                         </li>
                     {% endif %}

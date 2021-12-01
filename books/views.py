@@ -28,12 +28,15 @@ def book_list(request):
 def book_create(request):
     current_user = request.user
     if request.method == "POST":
-        form = BookForm(request.POST, request.FILES.get('picture'))
-        book = form.save(commit=False)
-        book.created_by = current_user.id
-        book.created_at = timezone.now()
-        book.save()
-        return redirect('books:book_list')
+        # form = BookForm(request.POST, request.FILES.get('picture'))
+        # book = form.save(commit=False)
+        # book.created_by = current_user.id
+        # book.created_at = timezone.now()
+        # book.book_file = BookForm(request.POST, request.FILES.get('file'))
+        form = BookForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('books:book_list')
     form = BookForm()
     context = {'form': form}
     return render(request, template_name='book_create.html', context=context)
@@ -84,15 +87,16 @@ def book_category(request, category=None):
 
 def book_update(request, pk):
     if request.method == 'POST':
-        book = Book.objects.filter(pk=pk).first()
-        book.title = request.POST.get('title')
-        book.author = request.POST.get('author')
-        book.picture = request.FILES.get('picture')
-        book.count = request.POST.get('count')
-        book.cost = request.POST.get('cost')
+        book = Book.objects.get(pk=pk)
+        book.title = request.POST.get('title') or book.title
+        book.author = request.POST.get('author') or book.author
+        book.picture = request.FILES.get('picture') or book.picture
+        book.count = request.POST.get('count') or book.count
+        book.cost = request.POST.get('cost') or book.cost
+        book.book_file = request.FILES.get('file') or book.book_file
         book.save()
         return redirect('books:book_detail', pk)
     book = Book.objects.filter(pk=pk).first()
     form = {'title': book.title, 'author': book.author, 'picture': book.picture.url, 'count': book.count,
-            'cost': book.cost, 'category': book.category}
+            'cost': book.cost, 'category': book.category, 'file': book.book_file}
     return render(request, template_name='book_update.html', context={'form': form})
