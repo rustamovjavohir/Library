@@ -5,11 +5,14 @@
 {% block content %}
     <form action="" method="post">
         {% csrf_token %}
-        <h3>{{ book.title }}</h3>
-        <img src="{{ book.picture.url }}" class="book_pic" alt="{{ book.title }}">
-        <h4>author:{{ book.author }}</h4>
-        <p>count: {{ book.count }}</p>
-        <p>Cost: {{ book.cost }} So'm</p>
+        <div class="book-card">
+            <h3>{{ book.title }}</h3>
+            <img src="{{ book.picture.url }}" class="book_pic" alt="{{ book.title }}">
+            <h4>author:{{ book.author }}</h4>
+            <p>count: {{ book.count }}</p>
+            <p>Cost: {{ book.cost }} So'm</p>
+            <a href="{{ book.picture.url }}" download="{{ book.picture.url }}">Download</a><br/>
+        </div>
         <a href="{% url 'books:book_list' %}" class="btn btn-primary">Back</a>
         {% if request.user.is_staff %}
             <a href="{% url 'books:book_update' book.id %}" class="btn btn-secondary m-2">edit</a>

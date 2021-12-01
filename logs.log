@@ -17,3 +17,156 @@
 2021-11-27 11:30:24,340 django.request WARNING  Not Found: /favicon.ico
 2021-11-27 11:48:36,455 asyncio      DEBUG    Using proactor: IocpProactor
 2021-11-27 11:48:36,528 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 09:22:54,139 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 09:22:56,750 django.request WARNING  Not Found: /favicon.ico
+2021-12-01 09:22:56,750 django.request WARNING  Not Found: /favicon.ico
+2021-12-01 09:23:44,147 django.request ERROR    Internal Server Error: /user/registration/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\user\appdata\local\programs\python\python39\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "E:\Python\Django\Library_\users\views.py", line 42, in registration
+    user.save()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+2021-12-01 09:23:44,147 django.request ERROR    Internal Server Error: /user/registration/
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\user\appdata\local\programs\python\python39\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "E:\Python\Django\Library_\users\views.py", line 42, in registration
+    user.save()
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\User\.virtualenvs\Library_-Kgoo-L5q\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+2021-12-01 09:51:13,231 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 09:51:13,323 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 09:51:20,303 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 09:51:31,262 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 09:51:31,397 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 09:51:45,446 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 09:51:46,835 django.request WARNING  Not Found: /favicon.ico
+2021-12-01 09:51:46,835 django.request WARNING  Not Found: /favicon.ico
+2021-12-01 10:19:57,746 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:32:17,091 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:32:17,161 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:33:00,999 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:42:12,704 django.utils.autoreload INFO     E:\Python\Django\Library_\books\models.py changed, reloading.
+2021-12-01 10:42:12,712 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:42:13,094 django.utils.autoreload INFO     E:\Python\Django\Library_\books\models.py changed, reloading.
+2021-12-01 10:42:13,094 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:42:13,158 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:42:13,471 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:45:56,647 django.utils.autoreload INFO     E:\Python\Django\Library_\books\models.py changed, reloading.
+2021-12-01 10:45:56,648 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:45:56,980 django.utils.autoreload INFO     E:\Python\Django\Library_\books\models.py changed, reloading.
+2021-12-01 10:45:56,981 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:45:57,035 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:45:57,533 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:46:06,198 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:46:06,277 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:46:18,626 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:46:18,697 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:46:27,296 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:46:40,400 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:47:22,767 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:47:27,688 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:47:30,549 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:48:53,713 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:49:00,337 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:50:00,808 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:50:05,075 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:50:49,718 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:50:53,040 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:57:22,664 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 10:57:24,520 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:57:24,591 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:57:29,336 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 10:57:32,900 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:07:53,489 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:15:10,306 django.utils.autoreload INFO     E:\Python\Django\Library_\Library_\settings.py changed, reloading.
+2021-12-01 11:15:10,306 asyncio      DEBUG    Using proactor: IocpProactor
+2021-12-01 11:15:10,726 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-12-01 11:17:27,605 django.utils.autoreload INFO     E:\Python\Django\Library_\Library_\settings.py changed, reloading.
+2021-12-01 11:17:27,605 asyncio      DEBUG    Using proactor: IocpProactor
